@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Personal blog - blog #1</title>
+    <link rel="stylesheet" href="../styles/pages/blog-post.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+  </head>
+  <body>
+    <div class="blog-post-page">
+      <header>
+        <nav id="menu">
+          <ul>
+            <li class="logo">
+              <figure>
+                <img src="../assets/dummy/site-logo.svg" alt="logo">
+              </figure>
+            </li>
+            <li><a href="../index.html">Blog</a></li>
+            <li><a href="#">About Me</a></li>
+            <li class="socials">
+              <ul>
+                <li>
+                  <a href="https://www.facebook.com/charitha.goonewardena" target="_blank"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/charitha-g/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </li>
+            <li class="icon" href="javascript:void(0);" onclick="myFunction()">
+              <i class="fas fa-bars"></i>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="container">
+        <section class="blog-post">
+          <div class="header">
+            <figure>
+              <img src="../assets/dummy/eastwood-fatal-error.png" alt="blog-image" />
+            </figure>
+            <div class="titles">
+              <h2>Error Handling in React 16</h2>
+              <h3>Introducing Error Boundaries</h3>
+                <ul class="socials">
+                  <li><i class="fas fa-share-alt"></i></li>
+                  <li>
+                    <i class="fab fa-facebook"></i>
+                  </li>
+                  <li>
+                    <i class="fab fa-instagram"></i>
+                  </li>
+                  <li>
+                    <i class="fab fa-linkedin-in"></i>
+                  </li>
+                </ul>
+            </div>
+          </div>
+          <div class="description">
+            <p>
+              As React 16 release is getting closer, we would like to announce a few changes to how React handles JavaScript errors inside components. These changes are included in React 16 beta versions, and will be a part of React 16.
+            </p>
+            <p>
+              In the past, JavaScript errors inside components used to corrupt React’s internal state and cause it to emit cryptic errors on next renders. These errors were always caused by an earlier error in the application code, but React did not provide a way to handle them gracefully in components, and could not recover from them.
+            </p>
+            <p>
+              A JavaScript error in a part of the UI shouldn’t break the whole app. To solve this problem for React users, React 16 introduces a new concept of an “error boundary”.
+
+Error boundaries are React components that catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI instead of the component tree that crashed. Error boundaries catch errors during rendering, in lifecycle methods, and in constructors of the whole tree below them.
+            </p>
+          </div>
+          <div class="posts-navigation">
+            <button class="btn"> <i class="fas fa-arrow-left"></i> previous post</button class="btn">
+            <button class="btn">next post <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </section>
+        <section class="author">
+          <figure>
+            <img src="../assets/dummy/author.jpg" alt="author-image" />
+          </figure>
+          <h2>Charitha Goonewardena</h2>
+          <h3>Member since 2018 . march</h3>
+          <h3>software engineer @ 99xT</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quam
+            molestias excepturi adipisci sapiente laudantium! Dolore architecto
+            consequatur quo rem sunt officia eveniet consectetur debitis
+            aliquid. Officia omnis nobis voluptatum.
+          </p>
+          <blockquote
+            cite="https://www.brainyquote.com/quotes/mark_twain_118964?src=t_motivational"
+          >
+            <p>
+              The secret of getting ahead is getting started.
+            </p>
+            <footer>—Mark Twain, <cite>brainyquote</cite></footer>
+          </blockquote>
+        </section>
+        <section class="subscribe">
+          <h1>Let's Keep in touch ;)</h1>
+          <p>Sing up for the <strong>FREE</strong> blog post news letter!</p>
+          <input type="text" placeholder="your name" />
+          <input type="email" placeholder="your email" />
+          <label>
+            <input type="checkbox" value="" />
+            <ins><i> I've read the terms & conditions </i></ins>
+          </label>
+          <button class="btn subs-btn">
+            Subscribe<i class="fas fa-paper-plane"></i>
+          </button>
+        </section>
+      </section>
+
+      <footer>
+        <ul>
+          <li><i class="far fa-copyright"></i> Charitha 2019</li>
+          <li><i class="fas fa-envelope"></i>charitha.ex@live.com</li>
+          <li><i class="fas fa-mobile"></i>+94 77 359 2057</li>
+          <li><i class="fas fa-map-marker-alt"></i>find me</li>
+        </ul>
+      </footer>
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("menu");
+          console.log("menu clicked");
+          console.log(x.className);
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+      </script>
+    </div>
+  </body>
+</html>

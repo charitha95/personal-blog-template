@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Personal blog</title>
+    <link rel="stylesheet" href="./styles/pages/home.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+  </head>
+  <body>
+    <div class="home-page">
+      <header>
+        <nav id="menu">
+          <ul>
+            <li class="logo">
+              <figure>
+                <img src="./assets/dummy/site-logo.svg" alt="logo" />
+              </figure>
+            </li>
+            <li><a href="index.html" class="current">Blog</a></li>
+            <li><a href="#">About Me</a></li>
+            <li class="socials">
+              <ul>
+                <li>
+                  <a
+                    href="https://www.facebook.com/charitha.goonewardena"
+                    target="_blank"
+                    ><i class="fab fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/charitha-g/"
+                    target="_blank"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </li>
+              </ul>
+            </li>
+            <li class="icon" href="javascript:void(0);" onclick="myFunction()">
+              <i class="fas fa-bars"></i>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="container">
+        <section class="recent-posts">
+          <h1>Recent posts</h1>
+
+          <article>
+            <figure>
+              <img
+                src="./assets//dummy/eastwood-order-completed.png"
+                alt="blog-image"
+              />
+              <figcaption>React ftw</figcaption>
+            </figure>
+            <section class="content">
+              <h2 class="title">React Best Practices</h2>
+              <h3 class="sub-title">
+                The React Best Practices you should follow in your React project
+              </h3>
+              <p class="summary">
+                For the past year, ReactJS has been rapidly increasing in
+                its popularity and by the beginning of 2018 it became more
+                popular than jQuery, at least in terms of Google searches. We
+                will not be comparing tools in terms of their demand in the
+                search engines; however, that gives us a clear understanding
+                that the ReactJS library is definitely popular.
+              </p>
+              <a href="./pages/blog-post.html" class="btn">
+                see more <i class="fas fa-angle-right"></i>
+              </a>
+            </section>
+          </article>
+
+          <article>
+            <figure>
+              <img
+                src="./assets//dummy/eastwood-delivery.png"
+                alt="blog-image"
+              />
+              <figcaption>Authentication</figcaption>
+            </figure>
+            <section class="content">
+              <h2 class="title">OIDC Authentication with React</h2>
+              <h3 class="sub-title">OIDC authentication + React</h3>
+              <p class="summary">
+                Hi readers, I’m writing this story to avoid more people going
+                crazy trying to implement oidc client with react, have
+                authorized routes and use the class provided by the library to
+                manage all the needed behaviour in our react applications.
+              </p>
+              <a href="./pages/blog-post.html" class="btn"
+                >see more <i class="fas fa-angle-right"></i
+              ></a>
+            </section>
+          </article>
+
+          <article>
+            <figure>
+              <img
+                src="./assets//dummy/eastwood-unsubscribed.png"
+                alt="blog-image"
+              />
+              <figcaption>componentWillUnmount in hook?</figcaption>
+            </figure>
+            <section class="content">
+              <h2 class="title">componentWillUnmount with Hooks?</h2>
+              <h3 class="sub-title">How to use Hooks</h3>
+              <p class="summary">
+                useEffect invokes this function to run as side-effect after
+                every render cycle(also based on the 2nd argument). This
+                function could also return another function that runs as a
+                cleanup before the effect function runs again or component
+                un-mounts.
+              </p>
+              <a href="./pages/blog-post.html" class="btn"
+                >see more <i class="fas fa-angle-right"></i
+              ></a>
+            </section>
+          </article>
+
+          <section class="more-blogs">
+            <a class="btn" href="#"
+              >load more blogs<i class="fas fa-chevron-down"></i>
+            </a>
+          </section>
+        </section>
+
+        <section class="subscribe">
+          <h1>Let's Keep in touch ;)</h1>
+          <p>Sing up for the <strong>FREE</strong> blog post news letter!</p>
+          <input type="text" placeholder="your name" />
+          <input type="email" placeholder="your email" />
+          <label>
+            <input type="checkbox" value="" />
+            <ins><i> I've read the terms & conditions </i></ins>
+          </label>
+          <button class="btn subs-btn">
+            Subscribe<i class="fas fa-paper-plane"></i>
+          </button>
+        </section>
+
+        <section class="old-posts">
+          <h1>Back to back</h1>
+          <div class="posts-wrapper">
+            <article>
+              <figure>
+                <img
+                  src="./assets//dummy/payment-processed-2.png"
+                  alt="blog-image"
+                />
+              </figure>
+              <section class="content">
+                <h2>How to automate your app?</h2>
+                <h3>Pretty simple with Cypress</h3>
+                <a href="./pages/blog-post.html" class="btn">
+                  see more
+                  <i class="fas fa-angle-right"></i>
+                </a>
+              </section>
+            </article>
+
+            <article>
+              <figure>
+                <img
+                  src="./assets//dummy/eastwood-downloading.png"
+                  alt="blog-image"
+                />
+              </figure>
+              <section class="content">
+                <h2>Package-management system</h2>
+                <h3>Automates processes</h3>
+                <a href="./pages/blog-post.html" class="btn">
+                  see more
+                  <i class="fas fa-angle-right"></i>
+                </a>
+              </section>
+            </article>
+
+            <article>
+              <figure>
+                <img src="./assets//dummy/eastwood-done.png" alt="blog-image" />
+              </figure>
+              <section class="content">
+                <h2>Master React - Part 1</h2>
+                <h3>Understand the React Concept</h3>
+                <a href="./pages/blog-post.html" class="btn">
+                  see more
+                  <i class="fas fa-angle-right"></i>
+                </a>
+              </section>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <footer>
+        <ul>
+          <li><i class="far fa-copyright"></i> Charitha 2019</li>
+          <li><i class="fas fa-envelope"></i>charitha.ex@live.com</li>
+          <li><i class="fas fa-mobile"></i>+94 77 359 2057</li>
+          <li><i class="fas fa-map-marker-alt"></i>find me</li>
+        </ul>
+      </footer>
+    </div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("menu");
+        console.log("menu clicked");
+        console.log(x.className);
+        if (x.className === "") {
+          x.className += " responsive";
+        } else {
+          x.className = "";
+        }
+      }
+    </script>
+  </body>
+</html>

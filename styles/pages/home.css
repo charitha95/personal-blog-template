@@ -1,0 +1,183 @@
+/* imports common/reusable styles */
+@import "../base/reset.css"; /* removes browser default styles */
+@import "../base/typography.css"; /* add styles related to font face */
+@import "../base/container.css"; /* add styles related to header */
+@import "../components/header.css"; /* add styles related to header */
+@import "../components/button.css"; /* add styles related to buttons */
+@import "../components/input.css"; /* add styles related to buttons */
+@import "../components/subscribe.css"; /* add styles related to buttons */
+@import "../components/footer.css"; /* add styles related to footer */
+
+/* Grid layout of the home page */
+.home-page {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+header {
+  grid-area: header;
+}
+
+.container {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/* Rest of the styles*/
+
+.recent-posts {
+  margin-top: 80px;
+}
+
+.recent-posts h1 {
+  margin: 25px 0;
+}
+
+.recent-posts article {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 35px 0;
+  padding: 30px 30px 20px 30px;
+  transition: all 0.3s ease-out;
+}
+
+.recent-posts article:hover {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+article figure {
+  width: 100%;
+}
+
+figure img {
+  width: 100%;
+}
+
+article .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+article .title {
+  margin-top: 20px;
+}
+
+article .sub-title {
+  margin-top: 15px;
+}
+
+article .summary {
+  margin-top: 15px;
+  color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+article .btn {
+  margin-top: 25px;
+}
+
+article figure  figcaption{
+  text-align: center;
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 2px;
+  font-style: italic;
+  font-size: 12px;
+  padding: 5px 0;
+}
+
+.more-blogs {
+  margin: 35px 0 75px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.more-blogs a {
+  background-color: white;
+  color: black;
+}
+
+.old-posts h1 {
+  margin: 25px 0;
+}
+
+.old-posts article {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 35px 0;
+  padding: 30px 30px 20px 30px;
+  transition: all 0.3s ease-out;
+}
+
+.old-posts article:hover {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+@media screen and (min-width: 600px) {
+  h1 {
+    text-align: left;
+  }
+
+  a.btn {
+    max-width: 425px;
+  }
+
+  .recent-posts {
+    margin-top: 120px;
+  }
+
+  
+  .recent-posts article {
+    display: flex;
+    padding: 35px 55px;
+    margin-bottom: 70px;
+  }
+
+  article:nth-child(3) {
+    flex-direction: row-reverse;
+  }
+
+  article figure {
+    margin: 0 100px 0 45px;
+  }
+
+ 
+  article:nth-child(3) figure {
+    margin: 0 45px 0 100px;
+  }
+
+  article .content {
+    align-items: inherit;
+  }
+
+  .content .summary {
+    text-align: initial;
+  }
+
+  .old-posts {
+    margin-top: 75px;
+  }
+
+  .old-posts .posts-wrapper {
+    display: flex;
+  }
+
+  .old-posts .posts-wrapper article {
+    position: relative;
+    margin: 0 25px 0 0;
+  }
+  .old-posts .posts-wrapper article:nth-child(3) {
+    margin-right: 0;
+  }
+
+  .old-posts .posts-wrapper article figure {
+    margin: 0;
+    min-height: 245px;
+  }
+}

@@ -1,0 +1,31 @@
+footer {
+  margin-top: 70px;
+  background: black;
+}
+
+footer ul {
+  display: block;
+  padding: 45px 20px;
+  color: #b3b3b3;
+}
+
+footer ul li {
+  margin-bottom: 15px;
+}
+
+footer ul li i {
+  margin-right: 15px;
+}
+
+@media screen and (min-width: 600px) {
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer ul li {
+    cursor: pointer;
+    margin-bottom: 0;
+  }
+  
+}

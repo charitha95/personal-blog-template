@@ -1,0 +1,136 @@
+header {
+  position: fixed;;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  background: white;
+  width: 100%;
+  z-index: 10;
+}
+
+nav {
+  position: relative;
+  overflow: hidden;
+}
+
+nav li {
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+nav li:not(:first-child):not(:last-child) {
+  display: none;
+}
+
+nav li.logo {
+  background-color: white;
+  display: inline-block;
+  margin-right: 0;
+}
+
+nav li.logo figure {
+  line-height: 0;
+  width: 100px;
+}
+
+nav li.logo figure img {
+  width: 100%;
+}
+
+nav li.icon {
+  float: right;
+  display: block;
+}
+
+nav li.socials {
+  padding: 0;
+}
+
+nav.responsive li {
+  float: none;
+  display: block !important;
+  text-align: left;
+}
+
+nav.responsive {
+  position: relative;
+}
+
+nav.responsive .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+nav li a {
+  color: #b3b3b3;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+nav li a:hover {
+  color: black;
+}
+
+nav li a.current {
+  color: black;
+}
+
+nav li i {
+  color: black;
+  font-size: 25px !important;
+}
+
+nav .socials ul {
+  display: flex;
+}
+
+nav .socials i {
+  color: #b3b3b3;
+  font-size: 25px !important;
+  transition: all 0.5s ease;
+}
+
+nav .socials i:hover {
+  color: black;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    padding: 0 125px;
+    width: calc(100% - 250px);
+  }
+
+  nav li:not(:first-child) {
+    display: block;
+  }
+
+  nav li.logo {
+    margin-right: 100px;
+  }
+
+  nav .icon {
+    display: none !important;
+  }
+
+  nav li {
+    float: left;
+    display: block !important;
+    padding: 35px 10px 25px 10px;
+  }
+
+  nav {
+    overflow: hidden;
+  }
+
+  nav li.socials {
+    position: absolute;
+    right: 0;
+  }
+
+  nav .socials ul {
+    display: block;
+  }
+}
